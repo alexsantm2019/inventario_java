@@ -46,9 +46,9 @@ public class ArticuloController {
      }
           
      @DeleteMapping("/delete/{id}")
-     public String deleteOrden(@PathVariable Long id) {    	 
+     public String deleteArticulo(@PathVariable Long id) {    	 
     	 articuloRepository.deleteById(id);
-         return "Orden eliminada";
+         return "articulo eliminado";
      }     
           
      @GetMapping("/mensaje")
