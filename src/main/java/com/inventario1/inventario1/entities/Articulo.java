@@ -29,93 +29,42 @@ public class Articulo {
 	    private Integer ordenId;
 
 	    
-	  /**
-	   * Gets id.
-	   *
-	   * @return the id
-	   */
 	  public long getId() {
 	        return id;
 	    }
 
-	  /**
-	   * Sets id.
-	   *
-	   * @param id the id
-	   */
 	  public void setId(long id) {
 	        this.id = id;
 	    }
 
-	  /**
-	   * Gets first name.
-	   *
-	   * @return the first name
-	   */
 	  public String getNombre() {
 	        return nombre;
 	    }
 
-	  /**
-	   * Sets first name.
-	   *
-	   * @param firstName the first name
-	   */
 	  public void setNombre(String nombre) {
 	        this.nombre = nombre;
 	    }
 
-	  /**
-	   * Gets last name.
-	   *
-	   * @return the last name
-	   */
 	  public String getCodigo() {
 	        return codigo;
 	    }
 
-	  /**
-	   * Sets last name.
-	   *
-	   * @param lastName the last name
-	   */
 	  public void setCodigo(String codigo) {
 	        this.codigo = codigo;
 	    }
 	  
-	  /**
-	   * Gets last name.
-	   *
-	   * @return the last name
-	   */
 	  public Float getPrecioUnitario() {
 	        return precioUnitario;
 	    }
 
-	  /**
-	   * Sets last name.
-	   *
-	   * @param lastName the last name
-	   */
 	  public void setPrecioUnitario(Float precioUnitario) {
 	        this.precioUnitario = precioUnitario;
 	    }	  
 	  
-	  
-	  /**
-	   * Gets last name.
-	   *
-	   * @return the last name
-	   */
 	  public Integer getOrdenId() {
 	        return ordenId;
 	    }
 
-	  /**
-	   * Sets last name.
-	   *
-	   * @param lastName the last name
-	   */
 	  public void setOrdenId(Integer ordenId) {
 	        this.ordenId = ordenId;
 	    }		  

@@ -30,56 +30,27 @@ public class Client {
     private String apellido;
 
     
-  /**
-   * Gets id.
-   *
-   * @return the id
-   */
   public long getId() {
         return id;
     }
 
-  /**
-   * Sets id.
-   *
-   * @param id the id
-   */
   public void setId(long id) {
         this.id = id;
     }
 
-  /**
-   * Gets first name.
-   *
-   * @return the first name
-   */
+
   public String getNombre() {
         return nombre;
     }
 
-  /**
-   * Sets first name.
-   *
-   * @param firstName the first name
-   */
   public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-  /**
-   * Gets last name.
-   *
-   * @return the last name
-   */
   public String getApellido() {
         return apellido;
     }
 
-  /**
-   * Sets last name.
-   *
-   * @param lastName the last name
-   */
   public void setApellido(String apellido) {
         this.apellido = apellido;
     }

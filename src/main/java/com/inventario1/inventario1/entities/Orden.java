@@ -25,75 +25,42 @@ public class Orden {
 	    @Column(name = "clienteid", nullable = false)
 	    private Integer clienteId;
 
-	    
-	  /**
-	   * Gets id.
-	   *
-	   * @return the id
-	   */
+    
 	  public long getId() {
 	        return id;
 	    }
 
-	  /**
-	   * Sets id.
-	   *
-	   * @param id the id
-	   */
+
 	  public void setId(long id) {
 	        this.id = id;
 	    }
 
-	  /**
-	   * Gets first name.
-	   *
-	   * @return the first name
-	   */
+
 	  public String getFecha() {
 	        return fecha;
 	    }
 
-	  /**
-	   * Sets first name.
-	   *
-	   * @param firstName the first name
-	   */
+
 	  public void setFecha(String fecha) {
 	        this.fecha = fecha;
 	    }
 
-	  /**
-	   * Gets last name.
-	   *
-	   * @return the last name
-	   */
+
 	  public String getCodigo() {
 	        return codigo;
 	    }
 
-	  /**
-	   * Sets last name.
-	   *
-	   * @param lastName the last name
-	   */
+
 	  public void setCodigo(String codigo) {
 	        this.codigo = codigo;
 	    }
 	  
-	  /**
-	   * Gets last name.
-	   *
-	   * @return the last name
-	   */
+
 	  public Integer getClienteId() {
 	        return clienteId;
 	    }
 
-	  /**
-	   * Sets last name.
-	   *
-	   * @param lastName the last name
-	   */
+
 	  public void setClienteId(Integer clienteId) {
 	        this.clienteId = clienteId;
 	    }	  
