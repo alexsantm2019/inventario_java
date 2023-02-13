@@ -3,6 +3,8 @@ package com.inventario1.inventario1.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.inventario1.inventario1.entities.Orden;
 import com.inventario1.inventario1.repositories.OrdenRepository;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/orden")
 public class OrdenController {
@@ -44,11 +47,18 @@ public class OrdenController {
     	 return  ordenRepository.save(updateOrden);      	 
      }
           
+     /*
      @DeleteMapping("/delete/{id}")
      public String deleteOrden(@PathVariable Long id) {    	 
     	 ordenRepository.deleteById(id);
          return "Orden eliminada";
-     }     
+     } 
+     */
+     @DeleteMapping("/delete/{id}")
+     public ResponseEntity<Void> deleteOrden(@PathVariable Long id) {    	 
+    	 ordenRepository.deleteById(id);
+    	 return ResponseEntity.noContent().build();    	
+     } 
           
      @GetMapping("/mensaje")
      public String mensaje() {

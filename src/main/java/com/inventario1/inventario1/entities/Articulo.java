@@ -22,10 +22,10 @@ public class Articulo {
 	    @Column(name = "codigo", nullable = false)
 	    private String codigo;
 	    
-	    @Column(name = "precio_unitario", nullable = false)
+	    @Column(name = "preciounitario", nullable = false)
 	    private Float precioUnitario;
     
-	    @Column(name = "orden_id", nullable = false)
+	    @Column(name = "ordenid", nullable = false)
 	    private Integer ordenId;
 
 	    

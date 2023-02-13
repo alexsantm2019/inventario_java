@@ -1,11 +1,15 @@
 package com.inventario1.inventario1.controllers;
 
 import com.inventario1.inventario1.entities.Client;
+
 import com.inventario1.inventario1.repositories.ClientRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -50,12 +54,22 @@ public class ClientController {
     	 updateClient.setApellido(client.getApellido());    		    
     	 return  clientRepository.save(updateClient);      	 
      }
-          
+      
+     /*
      @DeleteMapping("/delete/{id}")
      public String deleteClient(@PathVariable Long id) {    	 
     	 clientRepository.deleteById(id);
          return "Cliente eliminado";
-     }     
+     }
+     */
+     
+     @DeleteMapping("/delete/{id}")
+     public ResponseEntity<Void> deleteClient(@PathVariable Long id) {    	 
+    	 clientRepository.deleteById(id);
+    	 return ResponseEntity.noContent().build();    	
+     } 
+     
+ 
           
      @GetMapping("/mensaje")
      public String mensaje() {

@@ -22,7 +22,7 @@ public class Orden {
 	    @Column(name = "codigo", nullable = false)
 	    private String codigo;
     
-	    @Column(name = "cliente_id", nullable = false)
+	    @Column(name = "clienteid", nullable = false)
 	    private Integer clienteId;
 
 	    
