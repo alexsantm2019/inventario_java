@@ -1,6 +1,7 @@
 # inventario_java
 Inventario realizado en en Spring Boot con Eclipse
 
+#Nombre de la base de datos: inventario_java
 #Tablas:
 
 CLIENTE:
